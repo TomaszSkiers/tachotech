@@ -1,0 +1,3 @@
+wyłączyłem inteliSense suggestion, copilot nie podpowiada kodu
+
+koło zębate -> Settings -> w pasku wyszukiwania inlineSuggestion -> odznaczam Editor->inlineSuggestion:Enabled

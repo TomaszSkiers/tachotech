@@ -1,0 +1,24 @@
+src/
+├── assets/
+│   ├── images/
+│   │   ├── logo.png            # Logo firmy
+│   │   ├── hero-bg.jpg         # Tło banera głównego
+│   │   └── service-icons/      # Ikony usług (np. calibration-icon.svg)
+│   └── pdf/
+│       └── cennik.pdf          # Dokumenty do pobrania
+│
+├── components/
+│   ├── Header.jsx              # Nagłówek strony
+│   ├── Footer.jsx              # Stopka
+│   ├── ServiceCard.jsx         # Karta usługi (wielokrotnego użytku)
+│   └── ContactForm.jsx         # Formularz kontaktowy
+│
+├── pages/
+│   ├── Home.jsx                # Strona główna
+│   ├── Services.jsx            # Wszystkie usługi
+│   ├── About.jsx               # O firmie
+│   └── Contact.jsx            # Kontakt
+│
+├── App.jsx                     # Główny router
+├── main.jsx                    # Punkt wejściowy
+├── index.css

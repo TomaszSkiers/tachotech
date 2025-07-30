@@ -1,0 +1,16 @@
+Przy instalacji tailwndcss pojawiło się sporo problemów mianowicie nie aplikował niektórych klas jak
+bg-blue-500, prawdopodobnie z powodu tego, że najnowsze wersje nie do końca są kompatybilne. 
+Rozwiązaniem jest instalacja tych wersji
+npm install -D tailwindcss@^3.4.0 postcss@^8.4.31 autoprefixer@^10.4.16
+npx tailwindcss init -p
+
+Otwórz/utwórz plik src/index.css i wklej:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Upewnij się, że plik jest zaimportowany w głównym pliku JS/TS (np. src/main.tsx):
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'  // <-- To musi być!
