@@ -6,6 +6,7 @@ import {
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 import Encouragers from "../components/Encouragers";
+import InfoBox from "../components/InfoBox";
 
 const Home = () => {
   return (
@@ -26,9 +27,15 @@ const Home = () => {
       <Encouragers text="Duży parking, łatwy zjazd z drogi krajowej nr 631"/>
       <Encouragers text="Na miejscu sklep spożywczo - przemysłowy"/>
       <Encouragers text="Zaplecze kuchenne darmowa kawa / herbata"/>
+      <Encouragers text="Zniżki dla stałych klientów" />
 
+      {/** boxes */}
+      <InfoBox text="kalibracja tachografu" icon = {faTachographDigital} />
+      <InfoBox text="pobieranie danch" icon={faDownload} />
+      <InfoBox text="naprway" icon={faWrench} />
+      
       {/* Sekcja "Dlaczego my?" */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -74,7 +81,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sekcja Hero (baner główny) */}
       <section
