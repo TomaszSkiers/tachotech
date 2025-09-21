@@ -1,27 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header/Header';
-// import Footer from './components/Footer'
-import Home from './pages/Home'
-// import Services from './pages/Services'
-// import About from './pages/About'
-// import Contact from './pages/Contact'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import MainLayout from "./pages/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
-
-
-
   return (
-    <Router>
-      <Header />
-      <Routes> 
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/uslugi" element={<Services />} />
-        <Route path="/o-nas" element={<About />} />
-        <Route path="/kontakt" element={<Contact />} /> */}
+    <Router basename="/tachotech">
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path='contakt' element={<Contact />} />
+        </Route>
       </Routes>
-      {/* <Footer /> */}
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
+
