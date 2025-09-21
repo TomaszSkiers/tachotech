@@ -1,9 +1,11 @@
 import heroBg from "../assets/images/home_background_2.png"; // Upewnij się, że dodałeś plik hero-bg.jpg do /assets/images/
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faTachographDigital,
   faDownload,
   faWrench,
+  faGears,
+  faComments,
 } from "@fortawesome/free-solid-svg-icons";
 import Encouragers from "../components/Encouragers";
 import InfoBox from "../components/InfoBox";
@@ -33,6 +35,8 @@ const Home = () => {
       <InfoBox text="kalibracja tachografu" icon = {faTachographDigital} />
       <InfoBox text="pobieranie danch" icon={faDownload} />
       <InfoBox text="naprway" icon={faWrench} />
+      <InfoBox text="części zamienne" icon={faGears} />
+      <InfoBox text="doradztwo" icon={faComments} />
       
       {/* Sekcja "Dlaczego my?" */}
       {/* <section className="py-16 bg-white">
