@@ -10,6 +10,10 @@ import {
 import Encouragers from "../components/Encouragers";
 import InfoBox from "../components/InfoBox";
 import TachografCalibrationInfo from "../components/TachografCalibrationInfo";
+import TachografDataDownloadInfo from "../components/TachografDataDownloadInfo";
+import TachografRepairInfo from "../components/TachografRepairInfo";
+import TachografPartsInfo from "../components/TachografPartsInfo";
+import FreeLegalAdvice from "../components/FreeLegalAdvece";
 
 const Home = () => {
   return (
@@ -24,25 +28,31 @@ const Home = () => {
       </div>
 
       {/** encouragers */}
-      <Encouragers text='Najlepsze ceny'/>
+      <Encouragers text="Najlepsze ceny" />
       <Encouragers text="Szybko" />
       <Encouragers text="24h / 7" />
-      <Encouragers text="Duży parking, łatwy zjazd z drogi krajowej nr 631"/>
+      <Encouragers text="Duży parking, łatwy zjazd z drogi krajowej nr 631" />
       <Encouragers text="Możesz zrobić pauzę" />
-      <Encouragers text="Na miejscu sklep spożywczo - przemysłowy"/>
-      <Encouragers text="Zaplecze kuchenne darmowa kawa / herbata"/>
+      <Encouragers text="Na miejscu sklep spożywczo - przemysłowy" />
+      <Encouragers text="Zaplecze kuchenne darmowa kawa / herbata" />
       <Encouragers text="Zniżki dla stałych klientów" />
 
       {/** boxes */}
-      <InfoBox text="kalibracja tachografu" icon = {faTachographDigital}>
-        <TachografCalibrationInfo/>
-        </InfoBox>
-      <InfoBox text="pobieranie danch" icon={faDownload} />
-      <InfoBox text="naprway" icon={faWrench} />
-      <InfoBox text="części zamienne" icon={faGears} />
-      <InfoBox text="doradztwo" icon={faComments} />
-      
-      
+      <InfoBox text="kalibracja tachografu" icon={faTachographDigital}>
+        <TachografCalibrationInfo />
+      </InfoBox>
+      <InfoBox text="pobieranie danch" icon={faDownload}>
+        <TachografDataDownloadInfo />
+      </InfoBox>
+      <InfoBox text="naprway" icon={faWrench}>
+        <TachografRepairInfo />
+      </InfoBox>
+      <InfoBox text="części zamienne" icon={faGears}>
+        <TachografPartsInfo />
+      </InfoBox>
+      <InfoBox text="doradztwo" icon={faComments}>
+        <FreeLegalAdvice />
+      </InfoBox>
 
       {/* photo at the end */}
       <section

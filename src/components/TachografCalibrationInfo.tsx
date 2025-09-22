@@ -1,6 +1,6 @@
 const TachografCalibrationInfo = () => {
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md font-goldman">
       <h1 className="text-2xl font-bold text-blue-800 mb-4 text-center">
         Kalibracja Tachografu Cyfrowego
       </h1>
