@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Encouragers from "../components/Encouragers";
 import InfoBox from "../components/InfoBox";
+import TachografCalibrationInfo from "../components/TachografCalibrationInfo";
 
 const Home = () => {
   return (
@@ -27,67 +28,23 @@ const Home = () => {
       <Encouragers text="Szybko" />
       <Encouragers text="24h / 7" />
       <Encouragers text="Duży parking, łatwy zjazd z drogi krajowej nr 631"/>
+      <Encouragers text="Możesz zrobić pauzę" />
       <Encouragers text="Na miejscu sklep spożywczo - przemysłowy"/>
       <Encouragers text="Zaplecze kuchenne darmowa kawa / herbata"/>
       <Encouragers text="Zniżki dla stałych klientów" />
 
       {/** boxes */}
-      <InfoBox text="kalibracja tachografu" icon = {faTachographDigital} />
+      <InfoBox text="kalibracja tachografu" icon = {faTachographDigital}>
+        <TachografCalibrationInfo/>
+        </InfoBox>
       <InfoBox text="pobieranie danch" icon={faDownload} />
       <InfoBox text="naprway" icon={faWrench} />
       <InfoBox text="części zamienne" icon={faGears} />
       <InfoBox text="doradztwo" icon={faComments} />
       
-      {/* Sekcja "Dlaczego my?" */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: (
-                  <FontAwesomeIcon
-                    icon={faTachographDigital}
-                    className="text-blue-500 text-7xl mb-4"
-                  />
-                ),
-                title: "kalibracja tachografu",
-                desc: "wykonujemy kalibrację tachografów cyfrowych",
-              },
-              {
-                icon: (
-                  <FontAwesomeIcon
-                    icon={faDownload}
-                    className="text-blue-500 text-7xl mb-4"
-                  />
-                ),
-                title: "pobieranie danych",
-                desc: "pobieramy dane z karty kierowcy oraz tachografu",
-              },
-              {
-                icon: (
-                  <FontAwesomeIcon
-                    icon={faWrench}
-                    className="text-blue-500 text-7xl mb-4"
-                  />
-                ),
-                title: "naprawy",
-                desc: "naprawimy uszkodzony tachograf szybko i tanio",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg text-center shadow-md "
-              >
-                {item.icon}
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      
 
-      {/* Sekcja Hero (baner główny) */}
+      {/* photo at the end */}
       <section
         className="py-72 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
